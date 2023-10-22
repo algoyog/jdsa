@@ -14,4 +14,6 @@ public interface LinkedList {
     Node insert(Node input);
     void print();
 
+    boolean delete(int nodeNo);
+
 }

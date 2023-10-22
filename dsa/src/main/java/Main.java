@@ -16,6 +16,8 @@ public class Main {
             s.insert(new Node(i));
         }
         s.print();
+        s.delete(91);
+        s.print();
     }
 
 }

@@ -35,4 +35,30 @@ public class SinglyLinkedList implements LinkedList{
         System.out.println("\n");
     }
 
+    @Override
+    public boolean delete(int nodeNo) {
+        if(nodeNo<1){
+            System.out.println("Incorrect position");
+        }else if(nodeNo == 1){
+            this.start = start.next;
+        }else{
+            int i= 1;
+            Node curr = start;
+            while(true){
+                if(nodeNo == i+1){
+                    curr.next = (curr.next).next;
+                    break;
+                }else{
+                    if(curr == null){
+                        System.out.println("Incorrect Position");break;
+                    }
+                    i++;
+                    curr = curr.next;
+
+                }
+            }
+        }
+        return false;
+    }
+
 }
