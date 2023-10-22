@@ -3,6 +3,7 @@ import org.algoyog.ds.linkedlist.Node;
 import org.algoyog.ds.linkedlist.SinglyLinkedList;
 
 //TODO: Write proper tests
+//TODO: use lambdas and modernize the code
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello from java");
